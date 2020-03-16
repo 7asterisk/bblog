@@ -1,0 +1,27 @@
+a.uk-link-heading:hover {
+  color: #333;
+}
+
+dd {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.uk-card-header {
+  text-align: center;
+  background-color: #ffd33c;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: -20px;
+}
+
+hr {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+h3 {
+  color: #fff;
+}

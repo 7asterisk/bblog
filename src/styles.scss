@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/uikit/src/scss/variables-theme.scss";
+@import "../node_modules/uikit/src/scss/mixins-theme.scss";
+@import "../node_modules/uikit/src/scss/uikit-theme.scss";
+@import url("https://fonts.googleapis.com/css?family=Eczar|Noto+Sans&display=swap");
+
+html {
+  color: #333;
+}
+
+body {
+  font-family: "Noto Sans";
+}
+
+.uk-card-default {
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Noto Sans";
+}
+
+.uk-card-body {
+  padding: 30px 10px;
+}
+
+.share-btn {
+  float: right;
+  margin-right: -20px;
+  color: #044392;
+}
+
+.share-btn .uk-label {
+  background-color: #044392;
+}
+
+.uk-icon-link {
+  color: #fff;
+}
+
+.uk-icon-link:hover {
+  color: #fff;
+}
+
+.uk-card-body h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 20px;
+  height: 92px;
+  overflow: hidden;
+}
+
+.uk-card-body {
+  padding: 10px 30px;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}

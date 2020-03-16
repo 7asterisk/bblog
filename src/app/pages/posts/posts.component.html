@@ -1,0 +1,52 @@
+<div class="uk-container">
+  <div uk-grid>
+    <div class="uk-width-1-5@m">
+      <app-cat-nav class="uk-visible@m"></app-cat-nav>
+    </div>
+    <div
+      class="uk-width-1-2@m"
+      infiniteScroll
+      [infiniteScrollDistance]="2"
+      [infiniteScrollThrottle]="50"
+      (scrolled)="onScroll()"
+    >
+      <div *ngFor="let post of posts">
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+          uk-grid
+        >
+          <div class="uk-card-media-left uk-cover-container">
+            <a>
+              <img
+                [src]="imgUrl + post.news_image"
+                [routerLink]="['/news', { newsId: post.nid }]"
+                alt=""
+                uk-cover
+              />
+              <canvas width="600" height="400"></canvas>
+            </a>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <dt
+                class="uk-card-title title"
+                [routerLink]="['/news', { newsId: post.nid }]"
+              >
+                <a class="uk-link-reset">{{ post.news_title }}</a>
+              </dt>
+              <p>{{ post.news_date | dateAgo }}</p>
+              <div class="desc" [innerHTML]="post.news_description"></div>
+              <a [routerLink]="['/news', { newsId: post.nid }]"> अधिक पढ़ें</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-text-center" *ngIf="loading">
+        <app-loading></app-loading>
+      </div>
+    </div>
+    <div class="uk-width-expand@m">
+      <app-popular class="uk-visible@m"></app-popular>
+    </div>
+  </div>
+</div>

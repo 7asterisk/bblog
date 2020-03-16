@@ -1,0 +1,22 @@
+<div>
+  <div class="uk-card uk-card-default uk-card-small uk-card-body">
+    <div class="uk-card-header">
+      <div class="uk-panel">
+        <h3>श्रेणियाँ</h3>
+      </div>
+    </div>
+    <br>
+    <dl *ngFor="let c of cat" class="uk-description-list uk-description-list-divider">
+      <div>
+
+        <dt>
+          <a [routerLink]="[ '/posts', {catId:c.cid}]" routerLinkActive="active-link" class="uk-link-heading">
+            {{c.category_name}}
+            <span uk-icon="arrow-right"></span>
+          </a>
+        </dt>
+      </div>
+      <hr>
+    </dl>
+  </div>
+</div>

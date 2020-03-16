@@ -1,0 +1,16 @@
+<div>
+  <div class="uk-card uk-card-default uk-card-small uk-card-body">
+    <div class="uk-card-header">
+      <div class="uk-panel ">
+        <h3>विशेष</h3>
+      </div>
+    </div>
+    <br>
+    <dl *ngFor="let post of posts" class="uk-description-list uk-description-list-divider">
+      <div>
+        <dt [routerLink]="[ '/news', {newsId:post.nid} ]"> <a class=" uk-link-heading"> {{post.news_title}} </a></dt>
+      </div>
+      <hr>
+    </dl>
+  </div>
+</div>

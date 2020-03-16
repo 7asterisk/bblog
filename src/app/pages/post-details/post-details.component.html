@@ -1,0 +1,6 @@
+<div class="uk-container uk-container-xsmall">
+  <h2>{{ news?.news_title }}</h2>
+  <img [src]="imgUrl + news?.news_image" alt="" />
+  <br /><br />
+  <div [innerHTML]="news?.news_description"></div>
+</div>
