@@ -28,7 +28,7 @@
     "@ngx-share/buttons": "^7.1.4",
     "@ngx-share/core": "^7.1.4",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng-navigator-share": "^1.0.1",
     "ng2-adsense": "^7.0.0",
     "ng2-social-share": "0.0.10",
